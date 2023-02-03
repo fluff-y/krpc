@@ -40,7 +40,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt update
-          sudo apt install -y mono-complete python-setuptools python3-virtualenv python3-dev autoconf libtool luarocks texlive-latex-base texlive-latex-recommended texlive-fonts-recommended texlive-latex-extra libxml2-dev libxslt1-dev librsvg2-bin latexmk
+          sudo apt install -y mono-complete python-setuptools python3-virtualenv python3-dev autoconf libtool luarocks texlive-latex-base texlive-latex-recommended texlive-fonts-recommended texlive-latex-extra libxml2-dev libxslt1-dev librsvg2-bin libenchant1c2a latexmk
       - name: Run bazel
         run: bazel build //:krpc
       - name: Copy built zip file
