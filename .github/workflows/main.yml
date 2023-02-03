@@ -39,8 +39,8 @@ jobs:
           ls lib/mono-4.5
       - name: Install dependencies
         run: |
-          sudo apt-get update
-          sudo apt-get install -y mono-complete python-setuptools python3-virtualenv python3-dev autoconf libtool luarocks texlive-latex-base texlive-latex-recommended texlive-fonts-recommended texlive-latex-extra libxml2-dev libxslt1-dev librsvg2-bin libenchant1c2a latexmk
+          sudo apt update
+          sudo apt install -y mono-complete python-setuptools python3-virtualenv python3-dev autoconf libtool luarocks texlive-latex-base texlive-latex-recommended texlive-fonts-recommended texlive-latex-extra libxml2-dev libxslt1-dev librsvg2-bin libenchant1c2a latexmk
       - name: Run bazel
         run: bazel build //:krpc
       - name: Copy built zip file
